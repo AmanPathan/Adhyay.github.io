@@ -1,0 +1,314 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.footer-img {
+    height: 50px;
+}
+
+.logo {
+    z-index: 150;
+    height: 50px;
+    left: 50px;
+    position: absolute;
+    top: 10px;
+}
+
+.home {
+    background-color: #333;
+}
+
+nav {
+    background: #eb5757;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    position: relative;
+    top: -30px;
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+a:hover {
+    background: #333;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.title h2 {
+    position: relative;
+    margin-left: 0;
+    left: 38%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    top: 100px;
+}
+
+.slidershow {
+    z-index: 100px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.middle {
+    margin-top: 450px;
+    position: relative;
+    left: 50%;
+    width: 900px;
+    height: 600px;
+    transform: translate(-50%, -50%);
+}
+
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    border-radius: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.bar {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+    margin: 6px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.bar:hover {
+    background: #000;
+}
+
+input[name="r"] {
+    position: fixed;
+    visibility: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slide {
+    width: 20%;
+    transition: 0.6s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#r1:checked~.s1 {
+    margin-left: 0;
+}
+
+#r2:checked~.s1 {
+    margin-left: -20%;
+}
+
+#r3:checked~.s1 {
+    margin-left: -40%;
+}
+
+#r4:checked~.s1 {
+    margin-left: -60%;
+}
+
+#r5:checked~.s1 {
+    margin-left: -80%;
+}
+
+@media screen and (max-width:950px) {
+    .middle {
+        position: relative;
+        margin-top: 400px;
+        width: 700px;
+        height: 450px;
+        transform: translate(-50%, -50%);
+    }
+    .title h2 {
+        left: 30%;
+    }
+    .footer {
+        height: 200px;
+    }
+    .small.footer-small {
+        font-size: 12px;
+    }
+    .footer-bottom-wrapper {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .middle {
+        margin-top: 350px;
+        width: 600px;
+        height: 400px;
+    }
+    .title h2 {
+        font-size: 25px;
+        left: 33%;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .middle {
+        margin-top: 300px;
+        width: 500px;
+        height: 350px;
+    }
+    .title h2 {
+        font-size: 25px;
+        left: 30%;
+    }
+    .logo {
+        height: 40px;
+        left: 40px;
+        position: absolute;
+        top: 10px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .middle {
+        margin-top: 250px;
+        width: 400px;
+        height: 250px;
+    }
+    .title h2 {
+        font-size: 20px;
+        left: 28%;
+    }
+    .footer-img {
+        height: 40px;
+    }
+}
+
+@media screen and (max-width:538px) {
+    .gallery {
+        display: none;
+    }
+    .home {
+        font-size: 15px;
+        top: -25px;
+        left: 30px;
+    }
+    a {
+        height: 40px;
+    }
+    .logo {
+        height: 40px;
+        left: 20px;
+        position: absolute;
+        top: 20px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .middle {
+        margin-top: 200px;
+        width: 350px;
+        height: 200px;
+    }
+    .title h2 {
+        top: 80px;
+        font-size: 20px;
+        left: 25%;
+    }
+    .logo {
+        height: 30px;
+        left: 30px;
+        position: absolute;
+        top: 20px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .middle {
+        margin-top: 200px;
+        width: 350px;
+        height: 200px;
+    }
+    .title h2 {
+        font-size: 20px;
+        left: 25%;
+        top: 60px;
+    }
+    .footer-img {
+        height: 30px;
+    }
+}
+
+@media screen and (max-width:370px) {
+    .middle {
+        margin-top: 180px;
+        width: 300px;
+        height: 200px;
+    }
+    .title h2 {
+        font-size: 15px;
+        left: 25%;
+        top: 60px;
+    }
+    .footer-img {
+        height: 25px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .middle {
+        margin-top: 180px;
+        width: 250px;
+        height: 200px;
+    }
+    .title h2 {
+        font-size: 15px;
+        left: 25%;
+        top: 60px;
+    }
+    .footer-img {
+        height: 25px;
+    }
+}

@@ -1,0 +1,175 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    padding: 0;
+}
+
+.topic {
+    text-align: center;
+}
+
+.button1256 {
+    width: 80px;
+    height: 25px;
+    text-align: center;
+    float: right;
+    background-color: #fff;
+    margin: 0 2px 0 2px;
+    cursor: pointer;
+}
+
+.but {
+    text-decoration: none;
+    color: #555;
+    line-height: 25px;
+}
+
+#container456789 {
+    position: relative;
+    width: 50%;
+    margin: 150px auto;
+    padding: 50px 30px;
+    background-color: #eb5757;
+    border-radius: 3px;
+    color: #fff;
+    box-shadow: 0 0 10px 0 #999;
+}
+
+.ulul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 500px;
+}
+
+.lili {
+    background: #eb3737;
+    width: 200px;
+    margin: 10px;
+    padding: 5px;
+    display: inline-block;
+}
+
+#prev {
+    display: block;
+}
+
+#start {
+    display: none;
+    width: 100px;
+}
+
+input[type="radio"] {
+    cursor: pointer;
+}
+
+@media screen and (max-width:951px) {
+    .lili {
+        background: #eb3737;
+        width: 170px;
+        margin: 10px 100px 10px 30px;
+        ;
+        padding: 5px;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width:884px) {
+    .lili {
+        background: #eb3737;
+        width: 170px;
+        margin: 10px 150px 10px 30px;
+        ;
+        padding: 5px;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width:630px) {
+    #container456789 {
+        width: 75%;
+    }
+    .lili {
+        background: #eb3737;
+        width: 170px;
+        margin: 10px 150px 10px 30px;
+        ;
+        padding: 5px;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .lili {
+        position: relative;
+        left: -30px;
+        background: #eb3737;
+        width: 170px;
+        margin: 10px 150px 10px 30px;
+        ;
+        padding: 5px;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width:921px) {
+    #container456789 {
+        position: relative;
+        top: -30px;
+        width: 75%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    #container456789 {
+        position: relative;
+        top: -80px;
+        width: 75%;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .lili {
+        position: relative;
+        left: -50px;
+        background: #eb3737;
+        width: 150px;
+        margin: 10px 100px 10px 80px;
+        ;
+        padding: 5px;
+        display: inline-block;
+    }
+    .topic {
+        font-size: 25px;
+    }
+    .questions {
+        font-size: 20px
+    }
+    .quest {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:389px) {
+    .lili {
+        position: relative;
+        left: -80px;
+        width: 150px;
+        margin: 10px 100px 10px 80px;
+        ;
+        padding: 5px;
+        display: inline-block;
+    }
+    .button1256 {
+        float: left;
+    }
+    #container456789 {
+        width: 85%;
+    }
+}
